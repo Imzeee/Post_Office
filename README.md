@@ -10,7 +10,6 @@ There are waiting 'N' clients in front of the post office.
 Maximum number of clients that are allowed to stay in the building is 30.
 
 There are 3 windows inside where clients can be served:
-
   WINDOW_A: time of the service = 300s, max queue length = 5 
   WINDOW_B: time of the service = 150s, max queue length = 10
   WINDOW_C: time of the service = 100s, max queue length = 15
