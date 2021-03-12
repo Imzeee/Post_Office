@@ -34,3 +34,7 @@ Short information is written when client chooses particular queue.
 When all clients are served, program prints statistics.
 
 In program time passes 1000x faster than in real.
+
+## Short presentation
+
+![](pres.gif)
