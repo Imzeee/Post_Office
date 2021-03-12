@@ -29,7 +29,7 @@ There are 3 windows inside the building where clients can be handled:
 * window_B: time of the service = 150s, max queue length = 10
 * window_C: time of the service = 100s, max queue length = 15
 
-Short information is written when client chooses particular queue.
+Short information is written on the console when client chooses particular queue.
 
 When all clients are served, program prints statistics.
 
