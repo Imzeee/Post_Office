@@ -45,7 +45,7 @@ void* worker_C(void*);
 
 char check_best_queue(Office_Windows*);
 void store_data(char);
-void print_statistics(void);
+void print_statistics(long int number_of_clients);
 
 void open_the_office(Office_Windows*, pthread_t*, long int );
 
@@ -73,7 +73,7 @@ int main(int argc, char* argv[])
 
 	release_mutex_and_semaphores();
 
-	print_statistics();
+	print_statistics(number_of_clients);
 
 	free(thread_id);
 	free(Actual_Windows_Queue_Lengths);
@@ -362,10 +362,11 @@ void store_data(char window_letter) // one thread can access data at the time (m
 	}
 }
 
-void print_statistics(void) // printing statistics after closing the post office
+void print_statistics(long int number_of_clients) // printing statistics after closing the post office
 {
 	printf("\n-----------\n");
 	printf("\nStatistics:\n");
+	printf("Total number of clients: %ld\n",number_of_clients);
 	printf("Window A: %d clients handled\n",stats->total_window_A);
 	printf("Window B: %d clients handled\n",stats->total_window_B);
 	printf("Window C: %d clients handled\n",stats->total_window_C);
