@@ -13,10 +13,8 @@ Console application simulation of a post office in pandemic times in C language.
 * Each window has different time of the service and max queue length
 
 * Client enters the post office and chooses the best option based on time of the service and number of other clients in the queue.
-  
-* Client enters the post office and chooses the best option based on time of the service and number of other clients in the queue.
 
-* Post office is closed when all clients were served
+* Post office is closed when all clients are served
 
 
 ## Additional info
@@ -31,8 +29,14 @@ There are 3 windows inside the building where clients can be handled:
 * window_B: time of the service = 150s, max queue length = 10
 * window_C: time of the service = 100s, max queue length = 15
 
+Short information is written when client chooses particular queue.
+
 When all clients are served, program prints statistics.
 
 In program time passes 1000x faster than in real.
+
+## Short presentation
+
+
 
 
