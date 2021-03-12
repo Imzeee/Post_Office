@@ -17,7 +17,7 @@ Console application simulation of a post office in pandemic times in C language.
 * Post office is closed when all clients are served
 
 
-## Additional info
+## Additional information
 
 Program uses threads and mutexes,semaphores to synchronize them.
 
